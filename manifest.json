@@ -1,0 +1,9 @@
+{
+  "id": "higuchi-writer",
+  "name": "Higuchi Writer",
+  "version": "0.5.2",
+  "minAppVersion": "1.15.0",
+  "description": "Пишите книги по сценам, сохраняйте версии текста и экспортируйте рукопись в EPUB, DOCX, Markdown и HTML.",
+  "author": "Higuchi Lab",
+  "isDesktopOnly": true
+}
