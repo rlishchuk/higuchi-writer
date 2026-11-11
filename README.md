@@ -1,5 +1,17 @@
 # Higuchi Writer
 
+Write fiction scene by scene. Organize chapters, keep notes on characters and plotlines, restore earlier drafts, and export to EPUB, DOCX, Markdown, or HTML. The interface is in Russian.
+
+## Installation
+
+In Obsidian 1.15.0 or later on desktop, open Settings > Community plugins > Browse. Search for **Higuchi Writer**, select **Install**, then **Enable**. This option becomes available after the plugin is listed in the community directory.
+
+## Usage
+
+Click the book icon and choose **Попробовать на примере** to open the sample manuscript, or **Создать книгу** to start your own. Your manuscripts stay in your vault as Markdown files. Optional editing suggestions use a local Ollama server and only send the text you select when you request a review.
+
+## Руководство на русском
+
 Плагин Obsidian для работы над художественной прозой. Собирайте главы и сцены в рукопись, ведите заметки о персонажах и сохраняйте версии текста. Готовую книгу можно выгрузить в EPUB, DOCX, Markdown или HTML. Интерфейс на русском языке.
 
 ## Работа над книгой
@@ -46,7 +58,7 @@ Writer хранит рукописи, копии и файлы экспорта 
 
 ## Поддержка
 
-Если что-то пошло не так, опишите шаги, версию Obsidian и операционную систему в [Issues](https://github.com/LRostislaw/higuchi-writer/issues). Для воспроизведения подойдёт встроенный пример «Последний рейс».
+Если что-то пошло не так, опишите шаги, версию Obsidian и операционную систему в [Issues](https://github.com/rlishchuk/higuchi-writer/issues). Для воспроизведения подойдёт встроенный пример «Последний рейс».
 
 ## Ограничения первой версии
 
