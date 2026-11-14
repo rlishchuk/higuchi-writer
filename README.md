@@ -1,65 +1,33 @@
 # Higuchi Writer
 
-Write fiction scene by scene. Organize chapters, keep notes on characters and plotlines, restore earlier drafts, and export to EPUB, DOCX, Markdown, or HTML. The interface is in Russian.
+Write fiction scene by scene in Obsidian. Plan chapters, keep reference notes on your characters and locations, save versions of your text, and export the finished manuscript.
 
-## Installation
+## Install and open
 
-In Obsidian 1.15.0 or later on desktop, open Settings > Community plugins > Browse. Search for **Higuchi Writer**, select **Install**, then **Enable**. This option becomes available after the plugin is listed in the community directory.
+In Obsidian desktop 1.15.0 or later, open **Settings > Community plugins > Browse**. Find **Higuchi Writer**, then select **Install** and **Enable**. Click the book icon in the ribbon to open the manuscript panel.
 
-## Usage
+The interface is available in Russian, English, and Simplified Chinese. Select **Interface language** in the Writer settings, then disable and re-enable the plugin or restart Obsidian. Existing manuscripts and filenames keep their original language. The included sample manuscript is in Russian.
 
-Click the book icon and choose **Попробовать на примере** to open the sample manuscript, or **Создать книгу** to start your own. Your manuscripts stay in your vault as Markdown files. Optional editing suggestions use a local Ollama server and only send the text you select when you request a review.
+## Write and organize a book
 
-## Руководство на русском
+Choose **Create a book** to start a manuscript or **Open sample manuscript** to try the workflow. Outline supports parts, chapters, and scenes. Rename a section in the outline without renaming its file, or move a scene to another chapter from its menu.
 
-Плагин Obsidian для работы над художественной прозой. Собирайте главы и сцены в рукопись, ведите заметки о персонажах и сохраняйте версии текста. Готовую книгу можно выгрузить в EPUB, DOCX, Markdown или HTML. Интерфейс на русском языке.
+Use **References** for the book plan, timeline, characters, locations, and plotlines. These notes are stored as Markdown in your vault and stay separate from the export. A scene can also have a separate plan for its point of view, participants, setting, and goals.
 
-## Работа над книгой
+## Back up, check and export
 
-Откройте Writer по значку книги. При первом запуске выберите «Попробовать на примере» или «Создать книгу». Пример «Последний рейс» открывается на первой сцене. Его можно изменить, восстановить из копии и экспортировать.
+Open a section’s menu and select **Save a text version** to keep a copy or **Restore text** to compare a copy with current text and restore it. Writer backs up the current text before replacing it.
 
-Вкладка «Структура» открывает главы и сцены. Вкладка «Материалы» содержит замысел, хронологию, персонажей, места и сюжетные линии. В длинном плане доступен поиск по названию. Действия с разделом находятся в меню «⋯».
+Select **Check** to find missing files, incomplete sections, and broken links. Use **Preview** to read the assembled manuscript or **Export** to save EPUB, DOCX, Markdown, or HTML. For DOCX, use PNG or JPEG images. Each export creates its own folder. Writer’s version history supplements your vault backups.
 
-При создании книги можно выбрать фэнтези, боевик, триллер, психологический роман или свободную форму. Шаблон добавляет вопросы для автора в документ «Замысел».
+## Optional editing with Ollama
 
-В рукописи есть части, главы и сцены. Главу можно добавить в корень книги или в часть. Сцены добавляются в главы. Стрелки меняют порядок соседних записей, сохраняя вложенность. У сцены есть отдельный документ «Параметры сцены»: точка зрения, участники, время и место, цель, препятствие, действие и изменение ситуации.
+Install Ollama and a local model separately. Select a passage and run **Higuchi Writer: Review selected text**. Choose a task, then run the review. The configured local Ollama server receives the selected passage and the instructions for that task. The limit is 6,000 characters per request. Review suggestions before saving or applying them.
 
-Материалы книги содержат персонажей, места действия, сюжетные линии и хронологию. Нажмите на заголовок группы, чтобы свернуть или раскрыть её. Длинные списки открываются свёрнутыми. Они не включаются в экспорт рукописи. Все документы остаются обычными Markdown-файлами и открываются штатным редактором Obsidian.
+## Privacy and license
 
-Кнопка «Проверка» показывает отсутствующие файлы, пустые записи, незавершённые пометки, недопустимые пути и ошибки структуры. «Предпросмотр» и «Экспорт» доступны из нижней строки панели и сами проверяют текст перед сборкой. В меню «Экспорт» выберите Markdown и HTML, EPUB или DOCX. EPUB содержит вложенное оглавление со ссылками на главы и сцены. DOCX использует стили заголовков Word. Для изображений в DOCX используйте PNG или JPEG. Результаты каждого экспорта создаются в новой папке. Снимок предыдущего book.yaml сохраняется перед изменением плана.
+Writer stores books, versions, and exports in your vault. There is no registration, telemetry, or remote account. Network requests are limited to the configured loopback Ollama server when you request a review or list installed models. Cloud models are rejected. Local images may be encoded as Base64 when building self-contained exports.
 
-В меню «Действия раздела» можно изменить название в структуре и экспорте. Файл заметки сохраняет прежнее имя, чтобы ссылки на него продолжали работать. Перенос добавляет сцену в конец выбранной главы и сохраняет её текст и параметры. Перед изменением структуры сохраняется снимок плана.
+The official build is free to install and use. Source code is closed. See [LICENSE](LICENSE) for the binary terms and [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt) for bundled dependencies.
 
-## Резервные копии текста
-
-В меню «⋯» у части, главы или сцены выберите «Сохранить версию текста». Writer также сохраняет версию перед применением локальной редактуры. Копия привязана к разделу и доступна после переименования и переноса.
-
-«Восстановить текст» открывает сравнение текущего текста и выбранной копии. При подтверждении Writer сохраняет текущий текст отдельной копией, чтобы его можно было вернуть. Отсутствующий файл раздела создаётся заново. Старые копии из папки «Резервные копии редактуры» можно выбрать вручную после сверки текста.
-
-## Локальный редакторский помощник
-
-Для этой функции установите Ollama и локальную модель отдельно. Адрес по умолчанию - http://127.0.0.1:11434. Writer обращается к Ollama на этом компьютере по вашему запросу и передаёт ей выбранный фрагмент и задание. Ключи API и платные аккаунты не используются.
-
-Выделите фрагмент в редакторе и выполните команду «Higuchi Writer: Проверить выделенный текст». В окне показаны источник и выбранный фрагмент. Выберите задачу: найти повторы, проверить ясность, проверить мотивацию персонажей или предложить редактуру.
-
-Один запрос ограничен 6000 знаками. Никакие другие заметки не подмешиваются в контекст. Проверка выдаёт не более трёх замечаний с цитатами из исходного текста. Неподтверждённые цитаты отбрасываются. Вывод модели остаётся предложением для автора.
-
-Ответ можно сохранить отдельной заметкой. Для задачи редактуры доступна кнопка замены выделенного фрагмента. Перед заменой проверяется, что исходный текст не изменился, и создаётся резервная копия. Замена выполняется через обычный редактор и поддерживает его отмену. Автоматической замены и фонового анализа нет.
-
-Модель использует до шести потоков CPU и после запроса выгружается из памяти. На процессоре ответы могут занимать десятки секунд. Запрос можно остановить, закрытие окна также отменяет обработку. Облачные модели и внешние перенаправления запрещены.
-
-## Установка и данные
-
-Нужен настольный Obsidian 1.15.0 или новее. После выхода плагина в каталог откройте «Настройки» → «Сторонние плагины» → «Обзор», найдите Higuchi Writer, нажмите «Установить» и «Включить». Затем нажмите значок книги и выберите «Попробовать на примере».
-
-Writer хранит рукописи, копии и файлы экспорта в открытом хранилище. Плагин не отправляет телеметрию и не требует регистрации. Writer обращается к локальной Ollama, когда вы запускаете редакторскую проверку или запрашиваете список установленных моделей.
-
-В новом хранилище рукописи по умолчанию находятся в папке Higuchi Writer. В ранее настроенном хранилище используется выбранная папка. Материалы книги и предложения редактора хранятся локально и не входят в репозиторий кода. Автосинхронизация рукописей не настроена. Снимки плана не заменяют полный бэкап текстов.
-
-## Поддержка
-
-Если что-то пошло не так, опишите шаги, версию Obsidian и операционную систему в [Issues](https://github.com/rlishchuk/higuchi-writer/issues). Для воспроизведения подойдёт встроенный пример «Последний рейс».
-
-## Ограничения первой версии
-
-Нет автоматической проверки всей книги, графа связей персонажей и календаря событий. Хронология и сюжетные линии пока оформляются структурированными заметками. Модель не заменяет литературного редактора и может ошибаться.
+[Руководство на русском](README.ru.md)

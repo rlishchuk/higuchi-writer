@@ -1,5 +1,11 @@
 # История изменений
 
+## 0.5.6
+
+- Add Russian, English and Simplified Chinese interface options.
+- Use a loopback-only desktop HTTP client for Ollama, with streamed responses and cancellation.
+- Expand the English usage guide and document local network access.
+
 ## 0.5.5
 
 - Группы на вкладке «Материалы» можно свернуть. Writer показывает число карточек и запоминает состояние групп для каждой книги.

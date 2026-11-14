@@ -1,7 +1,7 @@
 {
   "id": "higuchi-writer",
   "name": "Higuchi Writer",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "minAppVersion": "1.15.0",
   "description": "Write fiction scene by scene, save drafts, and export your manuscript to EPUB, DOCX, Markdown, or HTML.",
   "author": "Higuchi Lab",
